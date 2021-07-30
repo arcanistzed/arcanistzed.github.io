@@ -6,8 +6,7 @@ You may be looking for:
 * [Atomizer](https://www.npmjs.com/package/foundry-atomizer) - A build and extract tool for FoundryVTT database files
 * [PF2e Sheet Toggle Banner](https://foundryvtt.com/packages/toggle-banner) - A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner
 * [SCS](https://foundryvtt.com/packages/scs) - An implementation of the Simultaneous Combat System for Foundry VTT
-* [Default Context Menu](https://foundryvtt.com/packages/dcm) - About
-Use the default browser context menu in Foundry VTT
+* [Default Context Menu](https://foundryvtt.com/packages/dcm) - Use the default browser context menu in Foundry VTT
 
 # Contact Me
 
