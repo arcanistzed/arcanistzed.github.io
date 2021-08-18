@@ -7,6 +7,7 @@ You may be looking for:
 * [PF2e Sheet Toggle Banner](https://foundryvtt.com/packages/toggle-banner) - A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner
 * [SCS](https://foundryvtt.com/packages/scs) - An implementation of the Simultaneous Combat System for Foundry VTT
 * [Default Context Menu](https://foundryvtt.com/packages/dcm) - Use the default browser context menu in Foundry VTT
+* [Export Sheet to PDF](https://foundryvtt.com/packages/pdf-sheet) - A system agnostic tool to export your Foundry character sheet to a PDF!
 
 # Contact Me
 
