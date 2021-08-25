@@ -1,6 +1,7 @@
-![](https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&theme=dark)
+# About Me
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&theme=dark)
 
-# My projects
+## My projects
 
 You may be looking for:
 * [Ace Library](https://foundryvtt.com/packages/acelib) - A library module for using the Ace editor in Foundry VTT
@@ -11,9 +12,8 @@ You may be looking for:
 * [Default Context Menu](https://foundryvtt.com/packages/dcm) - Use the default browser context menu in Foundry VTT
 * [Export Sheet to PDF](https://foundryvtt.com/packages/pdf-sheet) - A system agnostic tool to export your Foundry character sheet to a PDF!
 
-# Contact Me
+## Contact Me
 
-Come hang out on my Discord server: https://discord.gg/AAkZWWqVav where my username is [@arcanist#4317](https://discord.com/users/455117777745870860) or [click here to send me an email](mailto:arcanistzed@gmail.com?subject=NAME%20module%20for%20Foundry%20VTT).
-
+Come hang out on my [my Discord server](https://discord.gg/AAkZWWqVav) or [click here to send me an email](mailto:arcanistzed@gmail.com).
 
 *[View on GitHub](https://github.com/arcanistzed/arcanistzed.github.io)*
