@@ -12,6 +12,7 @@ You may be looking for:
 * [Default Context Menu](https://foundryvtt.com/packages/dcm) - Use the default browser context menu in Foundry VTT
 * [Export Sheet to PDF](https://foundryvtt.com/packages/pdf-sheet) - A system agnostic tool to export your Foundry character sheet to a PDF!
 * [Combat Tracker Groups](https://foundryvtt.com/packages/ctg) - Group combatants in the Combat Tracker
+* [Sidebar Macros](https://foundryvtt.com/packages/sidebar-macros) - Add Macros to the Foundry VTT sidebar!
 
 ## Contact Me
 
