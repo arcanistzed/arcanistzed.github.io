@@ -1,5 +1,8 @@
 # About Me
+
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&theme=dark)
+
+## Become a Patreon [Patreon](https://www.patreon.com/bePatron?u=15896855)
 
 ## My projects
 
