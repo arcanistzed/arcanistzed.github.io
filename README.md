@@ -16,6 +16,11 @@ You may be looking for:
 * [Export Sheet to PDF](https://foundryvtt.com/packages/pdf-sheet) - A system agnostic tool to export your Foundry character sheet to a PDF!
 * [Combat Tracker Groups](https://foundryvtt.com/packages/ctg) - Group combatants in the Combat Tracker and roll for group initiative.
 * [Sidebar Macros](https://foundryvtt.com/packages/sidebar-macros) - Add Macros to the Foundry VTT sidebar!
+* [World Smiths Toolkit](https://foundryvtt.com/packages/wst) - A toolkit for use in World Smiths products.
+
+### World Smiths
+
+I'm the owner and administrator of the [World Smiths Discord server](https://discord.gg/2YCFD8fxG7) where the community creates Foundry VTT worlds together. Our latest release is [The Sky Isles](https://github.com/World-Smiths/the-sky-isles) and there's more coming 😄
 
 ## Contact Me
 
