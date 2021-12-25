@@ -36,7 +36,7 @@ a {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	filter: blur(10vw);
+	filter: blur(8vw);
 	z-index: -1;
 }
 
@@ -58,7 +58,7 @@ a {
 	bottom: 5vh;
 	right: 15vw;
 	z-index: -3;
-	background-image: linear-gradient(0deg, indigo, transparent);
+	background-image: linear-gradient(0deg, indigo, navy);
 }
 
 article {
