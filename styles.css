@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+
+html {
+	height: 100%;
+}
+
+body {
+	/* full-height background */
+	height: 100%;
+	margin: 0;
+	/*padding: 5em 10em;*/
+
+	/* background color */
+	background-color: #111;
+
+	/* text styling */
+	font-family: "Fira Code", monospace;
+	color: white;
+}
+
+h1 {
+	font-size: 5em;
+	margin: 0;
+	font-weight: 100;
+}
+
+h1:after {
+	content: "✨";
+}
+
+a {
+	color: orange;
+}
+
+#background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	filter: blur(10vw);
+	z-index: -1;
+}
+
+#square {
+	background-color: blue;
+	position: absolute;
+	width: 25vw;
+	height: 20vh;
+	bottom: 15vh;
+	right: 35vw;
+	z-index: -2;
+}
+
+#gradient {
+	border-radius: 100%;
+	position: absolute;
+	width: 75vw;
+	height: 90vh;
+	bottom: 5vh;
+	right: 15vw;
+	z-index: -3;
+	background-image: linear-gradient(0deg, indigo, transparent);
+}
+
+article {
+    padding: 5em 10em;
+}
