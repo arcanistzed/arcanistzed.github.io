@@ -86,7 +86,7 @@ img {
 header, nav {
 	display: flex;
 	margin: 1em;
-	align-items: flex-end;
+	flex-direction: column;
 }
 
 header img {
