@@ -4,7 +4,7 @@
 	--text-color: white;
 	--alt-text-color: orange;
 	--background-color: #111;
-	--gradient-color: linear-gradient(0deg, indigo, navy);
+	--gradient: linear-gradient(0deg, indigo, navy);
 	--square-color: blue;
 
 	height: 100%;
@@ -59,7 +59,7 @@ body {
 	bottom: 5vh;
 	right: 15vw;
 	z-index: -3;
-	background-image: var(--gradient-color);
+	background-image: var(--gradient);
 }
 
 /* padding/centering */
@@ -93,6 +93,15 @@ p,
 li {
 	text-align: justify;
 	text-shadow: 0 0 4px var(--background-color);
+	margin: 0;
+}
+li {
+    padding: .5em .5em;
+    margin: .5em 0;
+}
+li:hover {
+    background-color: var(--square-color);
+    border-radius: 1em;
 }
 
 /* header */

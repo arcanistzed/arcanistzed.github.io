@@ -52,3 +52,8 @@ function generateHue(...bases) {
 };
 
 applyColors(generateColors());
+
+document.querySelectorAll("a").forEach(el => el.addEventListener("click", event => {
+    event.preventDefault();
+    window.open(el.href, "_blank");
+}));
