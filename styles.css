@@ -18,22 +18,8 @@ body {
 	color: white;
 }
 
-h1 {
-	font-size: 5em;
-	margin: 0;
-	font-weight: 100;
-}
-
-h1:after {
-	content: "✨";
-}
-
-a {
-	color: orange;
-}
-
 #background {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	filter: blur(8vw);
@@ -61,6 +47,57 @@ a {
 	background-image: linear-gradient(0deg, indigo, navy);
 }
 
-article {
-    padding: 5em 10em;
+h1 {
+	font-size: 5em;
+	margin: 0;
+	font-weight: 100;
+}
+
+h1:after {
+	content: "✨";
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+a {
+	color: orange;
+}
+
+main {
+	padding: 5em 10em;
+}
+
+p,
+li {
+	text-align: justify;
+	text-shadow: 0 0 4px black;
+}
+
+.patreon-widget,
+img {
+	display: block;
+	margin: 1em auto;
+}
+
+nav {
+	display: flex;
+	margin: 1em;
+}
+
+footer a {
+	font-size: 3em;
+}
+
+footer a,
+footer p {
+	color: var(--text-color);
+	margin: auto;
+}
+
+footer p {
+	color: var(--darker-text-color);
 }
