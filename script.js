@@ -142,25 +142,25 @@ const projects = [
 ];
 // If ListJS is available
 if (window?.List) {
-const options = {
-    valueNames: [
-        "name",
-        { attr: "href", name: "link" },
-        "description",
-        "tags",
-    ],
-    item: `<li><a class="name link"></a><p class="description"></p><p class="tags"></p></li>`
-};
-const projectList = new List("project-list", options);
-projects.forEach(project => {
-    // Add to list
-    projectList.add({
-        name: project.name,
-        link: project.link,
-        description: project.description,
-        tags: project.tags.map(t => `#${t}`).join(", ")
+    const options = {
+        valueNames: [
+            "name",
+            { attr: "href", name: "link" },
+            "description",
+            "tags",
+        ],
+        item: `<li><a class="name link"></a><p class="description"></p><p class="tags"></p></li>`
+    };
+    const projectList = new List("project-list", options);
+    projects.forEach(project => {
+        // Add to list
+        projectList.add({
+            name: project.name,
+            link: project.link,
+            description: project.description,
+            tags: project.tags.map(t => `#${t}`).join(", ")
+        });
     });
-});
 };
 
 // Random placeholder text in search box
@@ -205,6 +205,14 @@ function scrollFunction() {
     } else {
         gotoTop.style.display = "none";
     };
+
+    // If scroll position is after the top of the project list 
+    if (root.scrollTop > document.querySelector("#project-list").offsetTop
+        // and the bottom of the screen is before the bottom of the list
+        && root.scrollTop + root.clientHeight < document.querySelector("#project-list").offsetTop + document.querySelector("#project-list").offsetHeight) {
+        // Focus search box
+        document.getElementById("search-box").focus();
+    }
 };
 
 // Handle goto top button
