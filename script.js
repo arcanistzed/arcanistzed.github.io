@@ -22,7 +22,29 @@ function applyColors(colors) {
         )`);
     rootStyle.setProperty("--square-color", `hsl(${colors[2]} 100% 10%)`);
     rootStyle.setProperty("--alt-text-color", `hsl(${colors[2]} 100% 90%)`);
+
+    const altHex = hslToHex(colors[2], 100, 90);
+    document.querySelector("#github-stats").src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true`;
 };
+
+/**
+ * Convert a HSL color to Hex
+ * @from https://stackoverflow.com/a/44134328
+ * @param {number} h - Hue
+ * @param {number} s - Saturation
+ * @param {number} l - Lightness
+ * @return {string} Hex color code
+ */
+function hslToHex(h, s, l) {
+    l /= 100;
+    const a = s * Math.min(l, 1 - l) / 100;
+    const f = n => {
+        const k = (n + h / 30) % 12;
+        const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+        return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and prefix "0" if needed
+    };
+    return `${f(0)}${f(8)}${f(4)}`;
+}
 
 /**
  * All allowed hues
