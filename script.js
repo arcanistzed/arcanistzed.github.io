@@ -163,6 +163,22 @@ projects.forEach(project => {
 });
 };
 
+// Random placeholder text in search box
+const placeholders = [
+    "What are you looking for?",
+    "How can I help?",
+    "What interests you?",
+    "What are you trying to find?",
+    "What's your query?",
+    "What do you want to search for?",
+    "Search for one of my projects",
+    "This is a fuzzy search box",
+    "Try searching here",
+    "This placeholder changes when you reload!",
+    "I hope you are having a good day!"
+];
+document.querySelector("#search-box").placeholder = placeholders[Math.floor(Math.random() * placeholders.length)];
+
 // Open projects when they are clicked on
 document.querySelectorAll("#project-list li").forEach(el => el.addEventListener("click", event => {
     event.preventDefault();
