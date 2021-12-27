@@ -180,7 +180,43 @@ footer {
 	text-align: center;
 }
 
-footer a {
-	color: var(--alt-text-color);
-	margin: auto;
+@media screen and (min-width: 800px) {
+	main {
+		padding-left: 20vw;
+		padding-right: 20vw;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	main {
+		padding-left: 33vw;
+		padding-right: 40vw;
+	}
+}
+
+@media speech, print {
+	#background,
+	input,
+	#gotoTop,
+	h1:after {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		background: white;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	p,
+	li {
+		text-shadow: none;
+	}
+	a {
+		color: blue;
+	}
+	header img {
+		filter: invert(0);
+	}
 }
