@@ -15,7 +15,7 @@ function generateColors() {
  */
 function applyColors(colors) {
     const rootStyle = document.documentElement.style;
-    rootStyle.setProperty("--gradient-color", `
+    rootStyle.setProperty("--gradient", `
         linear-gradient(
             hsl(${colors[0]} 100% 10%),
             hsl(${colors[1]} 100% 10%)
@@ -50,10 +50,124 @@ function generateHue(...bases) {
     const index = Math.floor(Math.random() * validHues.length);
     return validHues[index];
 };
-
+// Apply generated colors
 applyColors(generateColors());
 
+// List creation
+const projects = [
+    {
+        name: "Ace Library",
+        link: "https://foundryvtt.com/packages/acelib",
+        description: "A library module for using the Ace editor in Foundry VTT",
+        tags: ["Foundry VTT", "Ace", "Editor"]
+    },
+    {
+        name: "Journal Code Editor",
+        link: "https://foundryvtt.com/packages/jce",
+        description: "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
+        tags: ["Foundry VTT", "Editor"]
+    },
+    {
+        name: "Atomizer",
+        link: "https://www.npmjs.com/package/foundry-atomizer",
+        description: "A build and extract tool for FoundryVTT database files",
+        tags: ["Foundry VTT", "Database", "Build", "Extract"]
+    },
+    {
+        name: "PF2e Sheet Toggle Banner",
+        link: "https://foundryvtt.com/packages/toggle-banner",
+        description: "A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
+        tags: ["Foundry VTT", "PF2e", "Sheet", "Banner"]
+    },
+    {
+        name: "SCS",
+        link: "https://foundryvtt.com/packages/scs",
+        description: "An implementation of the Simultaneous Combat System for Foundry VTT",
+        tags: ["Foundry VTT", "SCS"]
+    },
+    {
+        name: "Default Context Menu",
+        link: "https://foundryvtt.com/packages/dcm",
+        description: "Use the default browser context menu in Foundry VTT",
+        tags: ["Foundry VTT", "Context Menu"]
+    },
+    {
+        name: "Export Sheet to PDF",
+        link: "https://foundryvtt.com/packages/pdf-sheet",
+        description: "A system agnostic tool to export your Foundry character sheet to a PDF!",
+        tags: ["Foundry VTT", "Sheet", "PDF"]
+    },
+    {
+        name: "Combat Tracker Groups",
+        link: "https://foundryvtt.com/packages/ctg",
+        description: "Group combatants in the Combat Tracker and roll for group initiative.",
+        tags: ["Foundry VTT", "Combat Tracker", "Group"]
+    },
+    {
+        name: "Sidebar Macros",
+        link: "https://foundryvtt.com/packages/sidebar-macros",
+        description: "Add Macros to the Foundry VTT sidebar!",
+        tags: ["Foundry VTT", "Macros", "Sidebar"]
+    },
+    {
+        name: "World Smiths Toolkit",
+        link: "https://foundryvtt.com/packages/wst",
+        description: "A toolkit for use in World Smiths products.",
+        tags: ["Foundry VTT", "World Smiths"]
+    }
+];
+const options = {
+    valueNames: [
+        "name",
+        { attr: "href", name: "link" },
+        "description",
+        "tags",
+    ],
+    item: `<li><a class="name link"></a><p class="description"></p><p class="tags"></p></li>`
+};
+const projectList = new List("project-list", options);
+projects.forEach(project => {
+    // Add to list
+    projectList.add({
+        name: project.name,
+        link: project.link,
+        description: project.description,
+        tags: project.tags.map(t => `#${t}`).join(", ")
+    });
+});
+// Focus search box
+document.getElementById("search-box").focus();
+
+// Open projects when they are clicked on
+document.querySelectorAll("#project-list li").forEach(el => el.addEventListener("click", event => {
+    event.preventDefault();
+    window.open(el.querySelector("a").href, "_blank");
+}));
+
+// Open links in new tab
 document.querySelectorAll("a").forEach(el => el.addEventListener("click", event => {
     event.preventDefault();
     window.open(el.href, "_blank");
 }));
+
+
+// Handle go to top button
+gotoTop = document.getElementById("gotoTop");
+window.onscroll = () => {
+    scrollFunction()
+};
+
+// Handle scrolling
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        gotoTop.style.display = "block";
+    } else {
+        gotoTop.style.display = "none";
+    };
+};
+
+// Handle goto top button
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};

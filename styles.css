@@ -7,6 +7,7 @@
 	--gradient: linear-gradient(0deg, indigo, navy);
 	--square-color: blue;
 
+	/* FIXME Can remove? */
 	height: 100%;
 	scroll-behavior: smooth;
 }
@@ -21,6 +22,7 @@
 	100% { transform: scale(1,1)      translateY(0); }
 }
 
+/* background */
 body {
 	/* full-height background */
 	height: 100%;
@@ -28,13 +30,7 @@ body {
 
 	/* background color */
 	background-color: var(--background-color);
-
-	/* text styling */
-	font-family: "Fira Code", monospace;
-	color: var(--text-color);
 }
-
-/* background */
 #background {
 	position: fixed;
 	width: 100%;
@@ -64,17 +60,26 @@ body {
 
 /* padding/centering */
 main {
-	padding: 10vh 20vw;
+	padding: 10vh 5vw;
 }
 .patreon-widget,
 img {
 	display: block;
 	margin: 1em auto;
 }
+#github-stats,
+iframe {
+	width: 100%;
+}
 
 /* text */
+body,
+body input {
+	font-family: "Fira Code", monospace;
+	color: var(--text-color);
+}
 h1 {
-	font-size: 5em;
+	font-size: 8vw;
 	margin: 0;
 	font-weight: 100;
 }
@@ -89,19 +94,69 @@ h3 {
 a {
 	color: var(--alt-text-color);
 }
+nav a {
+	font-size: 3em;
+	color: var(--alt-text-color);
+	margin: auto;
+}
 p,
 li {
-	text-align: justify;
 	text-shadow: 0 0 4px var(--background-color);
 	margin: 0;
 }
 li {
-    padding: .5em .5em;
-    margin: .5em 0;
+	padding: 0.5em 0.5em;
+	margin: 0.5em 0;
+	border: solid 1px transparent;
+	border-radius: 5px;
 }
 li:hover {
-    background-color: var(--square-color);
-    border-radius: 1em;
+	border: solid 1px var(--alt-text-color);
+}
+ul {
+	list-style: square;
+}
+.tags {
+	opacity: 0.5;
+	text-transform: lowercase;
+	font-size: 0.75em;
+}
+iframe {
+	border: none;
+}
+
+/* interactivity */
+#search-box {
+	background: transparent;
+	border: none;
+	border-radius: 5px;
+	color: var(--alt-text-color);
+	font-size: 1em;
+	padding: 5px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: hsla(0, 0%, 100%, 0.05);
+}
+::-webkit-search-cancel-button {
+	display: none;
+}
+#project-list,
+#gotoTop {
+	cursor: pointer;
+}
+#gotoTop {
+	display: none;
+	right: 1%;
+	position: fixed;
+	bottom: 2%;
+	z-index: 99;
+	background-color: transparent;
+	color: var(--text-color);
+	border: none;
+	font-size: 2em;
+}
+#gotoTop:hover {
+	color: var(--alt-text-color);
 }
 
 /* header */
@@ -112,17 +167,21 @@ header,
 nav {
 	display: flex;
 	margin: 1em;
+	flex-wrap: wrap;
+	column-gap: 10%;
 }
 header img {
 	filter: invert(1);
 	height: 10em;
-	animation: bounce 2s cubic-bezier(0.280, 0.840, 0.420, 1) 5s infinite;
+	animation: bounce 2s cubic-bezier(0.28, 0.84, 0.42, 1) 5s infinite;
 }
 
 /* footer */
-footer a {
-	font-size: 3em;
+footer {
+	margin: 1em 0;
+	text-align: center;
 }
+
 footer a {
 	color: var(--alt-text-color);
 	margin: auto;
