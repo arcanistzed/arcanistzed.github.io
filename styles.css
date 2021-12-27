@@ -120,6 +120,9 @@ ul {
 	text-transform: lowercase;
 	font-size: 0.75rem;
 }
+aside {
+    opacity: 0.5;
+}
 
 /* interactivity */
 #search-box {
@@ -174,7 +177,7 @@ header img {
 }
 
 /* footer */
-footer {
+footer p {
 	margin: 1em 0;
 	text-align: center;
 }
