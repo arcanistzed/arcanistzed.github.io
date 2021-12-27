@@ -14,6 +14,7 @@ function generateColors() {
  * @param {number[]} colors - Colors to apply
  */
 function applyColors(colors) {
+    // Background
     const rootStyle = document.documentElement.style;
     rootStyle.setProperty("--gradient", `
         linear-gradient(
@@ -23,6 +24,7 @@ function applyColors(colors) {
     rootStyle.setProperty("--square-color", `hsl(${colors[2]} 100% 10%)`);
     rootStyle.setProperty("--alt-text-color", `hsl(${colors[2]} 100% 90%)`);
 
+    // GitHub stats
     const altHex = hslToHex(colors[2], 100, 90);
     document.querySelector("#github-stats").src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true`;
 };
@@ -138,6 +140,8 @@ const projects = [
         tags: ["Foundry VTT", "World Smiths"]
     }
 ];
+// If ListJS is available
+if (window?.List) {
 const options = {
     valueNames: [
         "name",
@@ -157,8 +161,7 @@ projects.forEach(project => {
         tags: project.tags.map(t => `#${t}`).join(", ")
     });
 });
-// Focus search box
-document.getElementById("search-box").focus();
+};
 
 // Open projects when they are clicked on
 document.querySelectorAll("#project-list li").forEach(el => el.addEventListener("click", event => {
@@ -172,16 +175,16 @@ document.querySelectorAll("a").forEach(el => el.addEventListener("click", event 
     window.open(el.href, "_blank");
 }));
 
-
 // Handle go to top button
 gotoTop = document.getElementById("gotoTop");
 window.onscroll = () => {
-    scrollFunction()
+    scrollFunction();
 };
 
 // Handle scrolling
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    const root = document.documentElement;
+    if (root.scrollTop > 20) {
         gotoTop.style.display = "block";
     } else {
         gotoTop.style.display = "none";
@@ -190,6 +193,5 @@ function scrollFunction() {
 
 // Handle goto top button
 function topFunction() {
-    document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
