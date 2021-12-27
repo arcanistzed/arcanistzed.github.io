@@ -182,20 +182,19 @@ footer p {
 	text-align: center;
 }
 
+/* other media */
 @media screen and (min-width: 800px) {
 	main {
 		padding-left: 20vw;
 		padding-right: 20vw;
 	}
 }
-
 @media screen and (min-width: 2000px) {
 	main {
 		padding-left: 33vw;
 		padding-right: 40vw;
 	}
 }
-
 @media speech, print {
 	#background,
 	input,
@@ -204,7 +203,6 @@ footer p {
 		display: none;
 	}
 }
-
 @media print {
 	body {
 		background: white;
