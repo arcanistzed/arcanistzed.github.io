@@ -93,6 +93,9 @@ h3 {
 a {
 	color: var(--alt-text-color);
 }
+a:hover {
+	color: var(--text-color);
+}
 nav a {
 	font-size: 3rem;
 	color: var(--alt-text-color);
