@@ -145,9 +145,9 @@ aside {
 }
 #gotoTop {
 	display: none;
-	right: 2%;
 	position: fixed;
-	bottom: 2%;
+	right: 0.5em;
+	bottom: 0.5em;
 	z-index: 99;
 	background-color: transparent;
 	color: var(--text-color);
