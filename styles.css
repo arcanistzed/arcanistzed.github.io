@@ -11,13 +11,27 @@
 }
 
 @keyframes bounce {
-	0%   { transform: scale(1,1)      translateY(0); }
-	10%  { transform: scale(1.1,.9)   translateY(0); }
-	30%  { transform: scale(.9,1.1)   translateY(-50px); }
-	50%  { transform: scale(1.05,.95) translateY(0); }
-	57%  { transform: scale(1,1)      translateY(-3px); }
-	64%  { transform: scale(1,1)      translateY(0); }
-	100% { transform: scale(1,1)      translateY(0); }
+	0% {
+		transform: scale(1, 1) translateY(0);
+	}
+	10% {
+		transform: scale(1.1, 0.9) translateY(0);
+	}
+	30% {
+		transform: scale(0.9, 1.1) translateY(-50px);
+	}
+	50% {
+		transform: scale(1.05, 0.95) translateY(0);
+	}
+	57% {
+		transform: scale(1, 1) translateY(-3px);
+	}
+	64% {
+		transform: scale(1, 1) translateY(0);
+	}
+	100% {
+		transform: scale(1, 1) translateY(0);
+	}
 }
 
 /* background */
@@ -184,6 +198,18 @@ footer {
 	gap: 1em;
 	opacity: 0.5;
 	text-align: center;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+	width: .5em;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 1em;
+	background: var(--alt-text-color);
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--text-color);
 }
 
 /* other media */
