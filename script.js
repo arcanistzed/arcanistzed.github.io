@@ -213,6 +213,9 @@ function scrollFunction() {
         // Focus search box
         document.getElementById("search-box").focus();
     }
+        // Unfocus search box
+        searchBox.blur();
+    };
 };
 
 // Handle goto top button
