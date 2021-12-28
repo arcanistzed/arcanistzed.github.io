@@ -1,3 +1,7 @@
+const root = document.documentElement;
+const gotoTop = document.getElementById("gotoTop");
+const searchBox = document.getElementById("search-box");
+
 /**
  * Generate random colors
  * @returns {number[]} Random colors
@@ -15,7 +19,7 @@ function generateColors() {
  */
 function applyColors(colors) {
     // Background
-    const rootStyle = document.documentElement.style;
+    const rootStyle = root.style;
     rootStyle.setProperty("--gradient", `
         linear-gradient(
             hsl(${colors[0]} 100% 10%),
@@ -191,34 +195,27 @@ document.querySelectorAll("a").forEach(el => el.addEventListener("click", event 
     window.open(el.href, "_blank");
 }));
 
-// Handle go to top button
-const gotoTop = document.getElementById("gotoTop");
-
-// Handle scrolling
-document.addEventListener("scroll", () => scrollFunction());
-function scrollFunction() {
-    const root = document.documentElement;
+// Handle showing goto top button during scrolling
+document.addEventListener("scroll", () => {
     if (root.scrollTop > 20) {
         gotoTop.style.display = "block";
     } else {
         gotoTop.style.display = "none";
     };
-
-    const searchBox = document.getElementById("search-box");
-    // If scroll position is after the top of the project list 
-    if (root.scrollTop > document.querySelector("#project-list").offsetTop
-        // and the bottom of the screen is before the bottom of the list
-        && root.scrollTop + root.clientHeight < document.querySelector("#project-list").offsetTop + document.querySelector("#project-list").offsetHeight) {
-
-        // Focus search box
-        searchBox.focus();
-    } else {
-        // Unfocus search box
-        searchBox.blur();
-    };
-};
-
+});
 // Handle goto top button
 function topFunction() {
     document.documentElement.scrollTop = 0;
 };
+
+// Focus the search box when the project list is in view
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            searchBox.focus();
+        } else {
+            searchBox.blur();
+        };
+    });
+});
+observer.observe(document.querySelector("#project-list"));
