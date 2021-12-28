@@ -141,7 +141,7 @@ const projects = [
     }
 ];
 // If ListJS is available
-if (window?.List) {
+if (globalThis?.List) {
     const options = {
         valueNames: [
             "name",
@@ -193,11 +193,9 @@ document.querySelectorAll("a").forEach(el => el.addEventListener("click", event 
 
 // Handle go to top button
 gotoTop = document.getElementById("gotoTop");
-window.onscroll = () => {
-    scrollFunction();
-};
 
 // Handle scrolling
+document.addEventListener("scroll", () => scrollFunction());
 function scrollFunction() {
     const root = document.documentElement;
     if (root.scrollTop > 20) {
@@ -206,13 +204,15 @@ function scrollFunction() {
         gotoTop.style.display = "none";
     };
 
+    const searchBox = document.getElementById("search-box");
     // If scroll position is after the top of the project list 
     if (root.scrollTop > document.querySelector("#project-list").offsetTop
         // and the bottom of the screen is before the bottom of the list
         && root.scrollTop + root.clientHeight < document.querySelector("#project-list").offsetTop + document.querySelector("#project-list").offsetHeight) {
+
         // Focus search box
-        document.getElementById("search-box").focus();
-    }
+        searchBox.focus();
+    } else {
         // Unfocus search box
         searchBox.blur();
     };
