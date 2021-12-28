@@ -192,7 +192,7 @@ document.querySelectorAll("a").forEach(el => el.addEventListener("click", event 
 }));
 
 // Handle go to top button
-gotoTop = document.getElementById("gotoTop");
+const gotoTop = document.getElementById("gotoTop");
 
 // Handle scrolling
 document.addEventListener("scroll", () => scrollFunction());
