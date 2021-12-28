@@ -87,13 +87,13 @@ const projects = [
         name: "Ace Library",
         link: "https://foundryvtt.com/packages/acelib",
         description: "A library module for using the Ace editor in Foundry VTT",
-        tags: ["Foundry VTT", "Ace", "Editor"]
+        tags: ["Foundry VTT", "Ace", "Library", "Editor"]
     },
     {
         name: "Journal Code Editor",
         link: "https://foundryvtt.com/packages/jce",
         description: "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
-        tags: ["Foundry VTT", "Editor"]
+        tags: ["Foundry VTT", "Journal Entries", "Editor"]
     },
     {
         name: "Atomizer",
@@ -105,25 +105,25 @@ const projects = [
         name: "PF2e Sheet Toggle Banner",
         link: "https://foundryvtt.com/packages/toggle-banner",
         description: "A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
-        tags: ["Foundry VTT", "PF2e", "Sheet", "Banner"]
+        tags: ["Foundry VTT", "PF2e"]
     },
     {
-        name: "SCS",
+        name: "Simultaneous Combat System",
         link: "https://foundryvtt.com/packages/scs",
         description: "An implementation of the Simultaneous Combat System for Foundry VTT",
-        tags: ["Foundry VTT", "SCS"]
+        tags: ["Foundry VTT", "Combat"]
     },
     {
         name: "Default Context Menu",
         link: "https://foundryvtt.com/packages/dcm",
         description: "Use the default browser context menu in Foundry VTT",
-        tags: ["Foundry VTT", "Context Menu"]
+        tags: ["Foundry VTT", "Context Menu", "Default"]
     },
     {
         name: "Export Sheet to PDF",
         link: "https://foundryvtt.com/packages/pdf-sheet",
         description: "A system agnostic tool to export your Foundry character sheet to a PDF!",
-        tags: ["Foundry VTT", "Sheet", "PDF"]
+        tags: ["Foundry VTT", "Character", "PDF", "Export"]
     },
     {
         name: "Combat Tracker Groups",
@@ -141,7 +141,19 @@ const projects = [
         name: "World Smiths Toolkit",
         link: "https://foundryvtt.com/packages/wst",
         description: "A toolkit for use in World Smiths products.",
-        tags: ["Foundry VTT", "World Smiths"]
+        tags: ["Foundry VTT", "World Smiths", "Journal Entries"]
+    },
+    {
+        name: "World Smiths community",
+        link: "https://discord.gg/2YCFD8fxG7",
+        description: "I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
+        tags: ["Foundry VTT", "World Building", "Community"]
+    },
+    {
+        name: "The Sky Isles",
+        link: "https://foundryvtt.com/packages/the-sky-isles",
+        description: " A dnd5e world and preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
+        tags: ["Foundry VTT", "world", "CZRPG"]
     }
 ];
 // If ListJS is available
