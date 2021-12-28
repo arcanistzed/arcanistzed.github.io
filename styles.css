@@ -60,7 +60,8 @@ body {
 main {
 	padding: 10vh 5vw;
 }
-nav, section {
+nav,
+section {
 	padding: 0.5em 0;
 }
 img {
@@ -123,10 +124,6 @@ ul {
 	text-transform: lowercase;
 	font-size: 0.75rem;
 }
-aside {
-	opacity: 0.5;
-	text-align: center;
-}
 
 /* interactivity */
 #search-box {
@@ -181,8 +178,11 @@ header img {
 }
 
 /* footer */
-footer p {
-	margin: 1em 0;
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	opacity: 0.5;
 	text-align: center;
 }
 
