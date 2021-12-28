@@ -125,6 +125,7 @@ ul {
 }
 aside {
 	opacity: 0.5;
+	text-align: center;
 }
 
 /* interactivity */
