@@ -97,7 +97,7 @@ h1 {
 	margin: 0;
 	font-weight: 100;
 }
-h1:after {
+h1::after {
 	content: "✨";
 }
 h1,
@@ -117,8 +117,9 @@ nav a {
 	margin: auto;
 }
 p,
-li {
-	text-shadow: 0 0 4px var(--background-color);
+li,
+a {
+	text-shadow: 0 0 4px var(--square-color);
 	margin: 0;
 }
 li {
@@ -202,7 +203,7 @@ footer {
 
 /* scroll bar */
 ::-webkit-scrollbar {
-	width: .5em;
+	width: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
 	border-radius: 1em;
@@ -210,6 +211,12 @@ footer {
 }
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--text-color);
+}
+
+/* selected text */
+::selection {
+	background: var(--text-color);
+	color: var(--square-color);
 }
 
 /* other media */
@@ -229,7 +236,7 @@ footer {
 	#background,
 	input,
 	#gotoTop,
-	h1:after {
+	h1::after {
 		display: none;
 	}
 }
@@ -240,7 +247,8 @@ footer {
 		font-family: Arial, Helvetica, sans-serif;
 	}
 	p,
-	li {
+	li,
+	a {
 		text-shadow: none;
 	}
 	a {
