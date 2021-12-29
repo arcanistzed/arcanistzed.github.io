@@ -219,15 +219,3 @@ document.addEventListener("scroll", () => {
 function topFunction() {
     document.documentElement.scrollTop = 0;
 };
-
-// FIXME: Focus the search box when the project list is in view
-/*const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            searchBox.focus();
-        } else {
-            searchBox.blur();
-        };
-    });
-});
-observer.observe(document.querySelector("#project-list"));*/
