@@ -220,8 +220,8 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 };
 
-// Focus the search box when the project list is in view
-const observer = new IntersectionObserver(entries => {
+// FIXME: Focus the search box when the project list is in view
+/*const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             searchBox.focus();
@@ -230,4 +230,4 @@ const observer = new IntersectionObserver(entries => {
         };
     });
 });
-observer.observe(document.querySelector("#project-list"));
+observer.observe(document.querySelector("#project-list"));*/
