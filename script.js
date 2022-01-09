@@ -158,7 +158,8 @@ const projects = [
     {
         name: "The Delian Tomb",
         link: "https://foundryvtt.com/packages/the-delian-tomb",
-        description: "A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video."
+        description: "A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video.",
+        tags: ["Foundry VTT", "World", "MCDM", "Dungeon"]
     },
     {
         name: "Module compatibility checker",
@@ -191,7 +192,7 @@ if (globalThis?.List) {
             name: project.name,
             link: project.link,
             description: project.description,
-            tags: project.tags.map(t => `#${t}`).join(", ")
+            tags: project.tags?.map(t => `#${t}`)?.join(", ")
         });
     });
 };
