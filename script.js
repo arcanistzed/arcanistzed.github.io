@@ -87,37 +87,37 @@ const projects = [
         name: "Ace Library",
         link: "https://foundryvtt.com/packages/acelib",
         description: "A library module for using the Ace editor in Foundry VTT",
-        tags: ["Foundry VTT", "Ace", "Library", "Editor"]
+        tags: ["Foundry VTT", "Module", "Ace", "Library", "Editor"]
     },
     {
         name: "Journal Code Editor",
         link: "https://foundryvtt.com/packages/jce",
         description: "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
-        tags: ["Foundry VTT", "Journal Entries", "Editor"]
+        tags: ["Foundry VTT", "Module", "Journal Entries", "Editor"]
     },
     {
         name: "Atomizer",
         link: "https://www.npmjs.com/package/foundry-atomizer",
         description: "A build and extract tool for FoundryVTT database files",
-        tags: ["Foundry VTT", "Database", "Build", "Extract"]
+        tags: ["Foundry VTT", "NPM", "Database", "Build", "Extract"]
     },
     {
         name: "PF2e Sheet Toggle Banner",
         link: "https://foundryvtt.com/packages/toggle-banner",
         description: "A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
-        tags: ["Foundry VTT", "PF2e"]
+        tags: ["Foundry VTT", "Module", "PF2e"]
     },
     {
         name: "Simultaneous Combat System",
         link: "https://foundryvtt.com/packages/scs",
         description: "An implementation of the Simultaneous Combat System for Foundry VTT",
-        tags: ["Foundry VTT", "Combat"]
+        tags: ["Foundry VTT", "Module", "Combat"]
     },
     {
         name: "Default Context Menu",
         link: "https://foundryvtt.com/packages/dcm",
         description: "Use the default browser context menu in Foundry VTT",
-        tags: ["Foundry VTT", "Context Menu", "Default"]
+        tags: ["Foundry VTT", "Module", "Context Menu", "Default"]
     },
     {
         name: "Export Sheet to PDF",
@@ -129,31 +129,48 @@ const projects = [
         name: "Combat Tracker Groups",
         link: "https://foundryvtt.com/packages/ctg",
         description: "Group combatants in the Combat Tracker and roll for group initiative.",
-        tags: ["Foundry VTT", "Combat Tracker", "Group"]
+        tags: ["Foundry VTT", "Module", "Combat Tracker", "Group"]
     },
     {
         name: "Sidebar Macros",
         link: "https://foundryvtt.com/packages/sidebar-macros",
-        description: "Add Macros to the Foundry VTT sidebar!",
-        tags: ["Foundry VTT", "Macros", "Sidebar"]
+        description: "Add a Macros tab to the Foundry VTT sidebar!",
+        tags: ["Foundry VTT", "Module", "Macros", "Sidebar"]
+    },
+    {
+        name: "World Smiths",
+        link: "https://discord.gg/2YCFD8fxG7",
+        description: "I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
+        tags: ["Foundry VTT", "Community", "World Building"]
     },
     {
         name: "World Smiths Toolkit",
         link: "https://foundryvtt.com/packages/wst",
         description: "A toolkit for use in World Smiths products.",
-        tags: ["Foundry VTT", "World Smiths", "Journal Entries"]
-    },
-    {
-        name: "World Smiths community",
-        link: "https://discord.gg/2YCFD8fxG7",
-        description: "I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
-        tags: ["Foundry VTT", "World Building", "Community"]
+        tags: ["Foundry VTT", "Module", "World Smiths", "Journal Entries"]
     },
     {
         name: "The Sky Isles",
         link: "https://foundryvtt.com/packages/the-sky-isles",
-        description: " A dnd5e world and preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
-        tags: ["Foundry VTT", "world", "CZRPG"]
+        description: "A dnd5e preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
+        tags: ["Foundry VTT", "World", "CZRPG"]
+    },
+    {
+        name: "The Delian Tomb",
+        link: "https://foundryvtt.com/packages/the-delian-tomb",
+        description: "A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video."
+    },
+    {
+        name: "Module compatibility checker",
+        link: "https://docs.google.com/spreadsheets/d/1R9OhVbkRltwuu26bJALUj18VbrcZ_wZQmrbFgKfipB0/copy",
+        description: "A spreadsheet that leverages the official spreadsheet to let you know which percentage of your module list is compatible with v9.",
+        tags: ["Foundry VTT", "Spreadsheet", "Compatibility"]
+    },
+    {
+        name: "Custom Fonts",
+        link: "https://foundryvtt.com/packages/custom-fonts",
+        description: "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
+        tags: ["Foundry VTT", "Fonts", "Custom"]
     }
 ];
 // If ListJS is available
