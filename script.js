@@ -172,7 +172,13 @@ const projects = [
         link: "https://foundryvtt.com/packages/custom-fonts",
         description: "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
         tags: ["Foundry VTT", "Fonts", "Custom"]
-    }
+    },
+    {
+        name: "Persist Sheets",
+        link: "https://foundryvtt.com/packages/persist-sheets",
+        description: "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
+        tags: ["Foundry VTT", "Module", "Sheets"]
+    },
 ];
 // If ListJS is available
 if (globalThis?.List) {
