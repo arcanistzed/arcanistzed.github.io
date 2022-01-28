@@ -179,6 +179,12 @@ const projects = [
         description: "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
         tags: ["Foundry VTT", "Module", "Sheets"]
     },
+    {
+        name: "Multiline Text Drawings",
+        link: "https://www.patreon.com/posts/multiline-text-61748891",
+        description: "A module for Foundry VTT for automatically wrapping text in Drawings on the canvas.",
+        tags: ["Foundry VTT", "Module", "Drawings", "Text"]
+    }
 ];
 // If ListJS is available
 if (globalThis?.List) {
