@@ -249,3 +249,9 @@ document.addEventListener("scroll", () => {
 function topFunction() {
     document.documentElement.scrollTop = 0;
 };
+
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-PL71KBEP9H');
