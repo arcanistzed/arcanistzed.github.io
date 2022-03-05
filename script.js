@@ -184,7 +184,13 @@ const projects = [
         link: "https://www.patreon.com/posts/multiline-text-61748891",
         description: "A module for Foundry VTT for automatically wrapping text in Drawings on the canvas.",
         tags: ["Foundry VTT", "Module", "Drawings", "Text"]
-    }
+    },
+    {
+		name: "Progressive Web App",
+		link: "https://foundryvtt.com/packages/pwa",
+		description: "Install Foundry VTT as a Progressive Web App with it's own shortcut and window.",
+        tags: ["Foundry VTT", "Module", "PWA"],
+	},
 ];
 // If ListJS is available
 if (globalThis?.List) {
