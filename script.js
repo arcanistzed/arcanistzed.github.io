@@ -188,7 +188,7 @@ const projects = [
     {
 		name: "Progressive Web App",
 		link: "https://foundryvtt.com/packages/pwa",
-		description: "Install Foundry VTT as a Progressive Web App with it's own shortcut and window.",
+		description: "Install Foundry VTT as a Progressive Web App with its own shortcut and window.",
         tags: ["Foundry VTT", "Module", "PWA"],
 	},
 ];
