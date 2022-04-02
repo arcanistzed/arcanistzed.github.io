@@ -2,10 +2,10 @@
 
 :root {
 	--text-color: white;
-	--alt-text-color: orange;
+	--alt-text-color: transparent;
 	--background-color: #111;
 	--gradient: linear-gradient(0deg, indigo, navy);
-	--square-color: blue;
+	--square-color: transparent;
 
 	scroll-behavior: smooth;
 }
@@ -241,6 +241,13 @@ footer {
 	}
 }
 @media print {
+	:root {
+		--text-color: black !important;
+		--alt-text-color: black !important;
+		--background-color: white !important;
+		--gradient: transparent !important;
+		--square-color: white !important;
+	}
 	body {
 		background: white;
 		color: black;
