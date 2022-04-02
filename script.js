@@ -17,7 +17,7 @@ function generateColors() {
  * Apply the given colors to the page
  * @param {number[]} colors - Colors to apply
  */
-function applyColors(colors) {
+async function applyColors(colors) {
     // Background
     const rootStyle = root.style;
     rootStyle.setProperty("--gradient", `
