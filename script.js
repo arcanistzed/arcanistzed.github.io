@@ -43,11 +43,11 @@ function applyColors(colors) {
  */
 function hslToHex(h, s, l) {
     l /= 100;
-    const a = s * Math.min(l, 1 - l) / 100;
+	const a = (s * Math.min(l, 1 - l)) / 100;
     const f = n => {
         const k = (n + h / 30) % 12;
         const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-        return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and prefix "0" if needed
+        return Math.round(255 * color).toString(16).padStart(2, "0");   // convert to Hex and prefix "0" if needed
     };
     return `${f(0)}${f(8)}${f(4)}`;
 }
@@ -77,7 +77,7 @@ function generateHue(...bases) {
     const validHues = allAllowedHues(bases);
     const index = Math.floor(Math.random() * validHues.length);
     return validHues[index];
-};
+}
 // Apply generated colors
 applyColors(generateColors());
 
@@ -87,103 +87,111 @@ const projects = [
         name: "Ace Library",
         link: "https://foundryvtt.com/packages/acelib",
         description: "A library module for using the Ace editor in Foundry VTT",
-        tags: ["Foundry VTT", "Module", "Ace", "Library", "Editor"]
+		tags: ["Foundry VTT", "Module", "Ace", "Library", "Editor"],
     },
     {
         name: "Journal Code Editor",
         link: "https://foundryvtt.com/packages/jce",
-        description: "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
-        tags: ["Foundry VTT", "Module", "Journal Entries", "Editor"]
+		description:
+			"A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
+		tags: ["Foundry VTT", "Module", "Journal Entries", "Editor"],
     },
     {
         name: "Atomizer",
         link: "https://www.npmjs.com/package/foundry-atomizer",
         description: "A build and extract tool for FoundryVTT database files",
-        tags: ["Foundry VTT", "NPM", "Database", "Build", "Extract"]
+		tags: ["Foundry VTT", "NPM", "Database", "Build", "Extract"],
     },
     {
         name: "PF2e Sheet Toggle Banner",
         link: "https://foundryvtt.com/packages/toggle-banner",
-        description: "A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
-        tags: ["Foundry VTT", "Module", "PF2e"]
+		description:
+			"A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
+		tags: ["Foundry VTT", "Module", "PF2e"],
     },
     {
         name: "Simultaneous Combat System",
         link: "https://foundryvtt.com/packages/scs",
         description: "An implementation of the Simultaneous Combat System for Foundry VTT",
-        tags: ["Foundry VTT", "Module", "Combat"]
+		tags: ["Foundry VTT", "Module", "Combat"],
     },
     {
         name: "Default Context Menu",
         link: "https://foundryvtt.com/packages/dcm",
         description: "Use the default browser context menu in Foundry VTT",
-        tags: ["Foundry VTT", "Module", "Context Menu", "Default"]
+		tags: ["Foundry VTT", "Module", "Context Menu", "Default"],
     },
     {
         name: "Export Sheet to PDF",
         link: "https://foundryvtt.com/packages/pdf-sheet",
         description: "A system agnostic tool to export your Foundry character sheet to a PDF!",
-        tags: ["Foundry VTT", "Character", "PDF", "Export"]
+		tags: ["Foundry VTT", "Character", "PDF", "Export"],
     },
     {
         name: "Combat Tracker Groups",
         link: "https://foundryvtt.com/packages/ctg",
         description: "Group combatants in the Combat Tracker and roll for group initiative.",
-        tags: ["Foundry VTT", "Module", "Combat Tracker", "Group"]
+		tags: ["Foundry VTT", "Module", "Combat Tracker", "Group"],
     },
     {
         name: "Sidebar Macros",
         link: "https://foundryvtt.com/packages/sidebar-macros",
         description: "Add a Macros tab to the Foundry VTT sidebar!",
-        tags: ["Foundry VTT", "Module", "Macros", "Sidebar"]
+		tags: ["Foundry VTT", "Module", "Macros", "Sidebar"],
     },
     {
         name: "World Smiths",
         link: "https://discord.gg/2YCFD8fxG7",
-        description: "I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
-        tags: ["Foundry VTT", "Community", "World Building"]
+		description:
+			"I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
+		tags: ["Foundry VTT", "Community", "World Building"],
     },
     {
         name: "World Smiths Toolkit",
         link: "https://foundryvtt.com/packages/wst",
         description: "A toolkit for use in World Smiths products.",
-        tags: ["Foundry VTT", "Module", "World Smiths", "Journal Entries"]
+		tags: ["Foundry VTT", "Module", "World Smiths", "Journal Entries"],
     },
     {
         name: "The Sky Isles",
         link: "https://foundryvtt.com/packages/the-sky-isles",
-        description: "A dnd5e preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
-        tags: ["Foundry VTT", "World", "CZRPG"]
+		description:
+			"A dnd5e preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
+		tags: ["Foundry VTT", "World", "CZRPG"],
     },
     {
         name: "The Delian Tomb",
         link: "https://foundryvtt.com/packages/the-delian-tomb",
-        description: "A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video.",
-        tags: ["Foundry VTT", "World", "MCDM", "Dungeon"]
+		description:
+			"A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video.",
+		tags: ["Foundry VTT", "World", "MCDM", "Dungeon"],
     },
     {
         name: "Module compatibility checker",
         link: "https://docs.google.com/spreadsheets/d/1R9OhVbkRltwuu26bJALUj18VbrcZ_wZQmrbFgKfipB0/copy",
-        description: "A spreadsheet that leverages the official spreadsheet to let you know which percentage of your module list is compatible with v9.",
-        tags: ["Foundry VTT", "Spreadsheet", "Compatibility"]
+		description:
+			"A spreadsheet that leverages the official spreadsheet to let you know which percentage of your module list is compatible with v9.",
+		tags: ["Foundry VTT", "Spreadsheet", "Compatibility"],
     },
     {
         name: "Custom Fonts",
         link: "https://foundryvtt.com/packages/custom-fonts",
-        description: "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
-        tags: ["Foundry VTT", "Fonts", "Custom"]
+		description:
+			"Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
+		tags: ["Foundry VTT", "Fonts", "Custom"],
     },
     {
         name: "Persist Sheets",
         link: "https://foundryvtt.com/packages/persist-sheets",
-        description: "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
-        tags: ["Foundry VTT", "Module", "Sheets"]
+		description:
+			"This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
+		tags: ["Foundry VTT", "Module", "Sheets"],
     },
     {
         name: "Multiline Text Drawings",
         link: "https://www.patreon.com/posts/multiline-text-61748891",
         description: "A module for Foundry VTT for automatically wrapping text in Drawings on the canvas.",
-        tags: ["Foundry VTT", "Module", "Drawings", "Text"]
+		tags: ["Foundry VTT", "Module", "Drawings", "Text"],
     },
     {
 		name: "Progressive Web App",
@@ -195,13 +203,8 @@ const projects = [
 // If ListJS is available
 if (globalThis?.List) {
     const options = {
-        valueNames: [
-            "name",
-            { attr: "href", name: "link" },
-            "description",
-            "tags",
-        ],
-        item: `<li><a class="name link"></a><p class="description"></p><p class="tags"></p></li>`
+		valueNames: ["name", { attr: "href", name: "link" }, "description", "tags"],
+		item: `<li><a class="name link"></a><p class="description"></p><p class="tags"></p></li>`,
     };
     const projectList = new List("project-list", options);
     projects.forEach(project => {
@@ -210,10 +213,10 @@ if (globalThis?.List) {
             name: project.name,
             link: project.link,
             description: project.description,
-            tags: project.tags?.map(t => `#${t}`)?.join(", ")
+			tags: project.tags?.map(t => `#${t}`)?.join(", "),
         });
     });
-};
+}
 
 // Random placeholder text in search box
 const placeholders = [
@@ -227,12 +230,13 @@ const placeholders = [
     "This is a fuzzy search box",
     "Try searching here",
     "This placeholder changes when you reload!",
-    "I hope you are having a good day!"
+	"I hope you are having a good day!",
 ];
 document.querySelector("#search-box").placeholder = placeholders[Math.floor(Math.random() * placeholders.length)];
 
 // Open projects when they are clicked on
-document.querySelectorAll("#project-list li").forEach(el => el.addEventListener("click", event => {
+document.querySelectorAll("#project-list li").forEach(el =>
+	el.addEventListener("click", event => {
     event.preventDefault();
     window.open(el.querySelector("a").href, "_blank");
 }));
