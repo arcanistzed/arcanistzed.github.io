@@ -30,8 +30,30 @@ async function applyColors(colors) {
 
     // GitHub stats
     const altHex = hslToHex(colors[2], 100, 90);
-    document.querySelector("#github-stats").src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true`;
-};
+	document.querySelector(
+		"#github-stats img"
+	).src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true`;
+
+	// Discord presence
+	const id = "455117777745870860";
+	const discordPresence = document.querySelector("#discord-presence");
+	discordPresence.href = `https://discord.com/users/${id}`;
+    discordPresence.querySelector("img").src = `https://lanyard.cnrad.dev/api/${id}?bg=00000000`;
+
+	// Tiles
+	const tiles = document.querySelector(".tiles");
+	tiles.style.transition = "all 2s cubic-bezier(0.22, 1, 0.36, 1) 0s";
+	tiles.style.transform = "translateY(-50px)";
+	tiles.style.opacity = 0;
+
+	setTimeout(() => {
+		tiles.style.transform = "";
+		tiles.style.opacity = "";
+	}, 500);
+
+    if (!(await (await fetch(`https://api.lanyard.rest/v1/users/${id}`)).json()).data.activities.length)
+		discordPresence.remove();
+}
 
 /**
  * Convert a HSL color to Hex
