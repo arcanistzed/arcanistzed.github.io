@@ -237,12 +237,6 @@ document.querySelectorAll("#project-list li").forEach(el => el.addEventListener(
     window.open(el.querySelector("a").href, "_blank");
 }));
 
-// Open links in new tab
-document.querySelectorAll("a").forEach(el => el.addEventListener("click", event => {
-    event.preventDefault();
-    window.open(el.href, "_blank");
-}));
-
 // Handle showing goto top button during scrolling
 document.addEventListener("scroll", () => {
     if (root.scrollTop > 20) {
