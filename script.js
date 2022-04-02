@@ -10,8 +10,13 @@ function generateColors() {
     const one = generateHue(Math.floor(Math.random() * 360));
     const two = generateHue(one);
     const three = generateHue(one, two);
-    return [one, two, three];
-};
+	const colors = [one, two, three];
+	if (colors.some(c => c === undefined)) {
+		console.warn("Re-attempting color generation...");
+		return generateColors();
+	}
+	return colors;
+}
 
 /**
  * Apply the given colors to the page
