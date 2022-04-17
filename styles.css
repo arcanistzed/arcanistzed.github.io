@@ -129,6 +129,8 @@ li {
 	margin: 0.5em 0;
 	border: solid 1px transparent;
 	border-radius: 5px;
+	transform: translateX(100px);
+	opacity: 0;
 }
 li:hover {
 	border: solid 1px var(--alt-text-color);
@@ -221,6 +223,7 @@ footer {
 ::selection {
 	background: var(--text-color);
 	color: var(--square-color);
+	text-shadow: none;
 }
 
 /* other media */

@@ -292,6 +292,42 @@ function topFunction() {
 	document.documentElement.scrollTop = 0;
 }
 
+// Slide the list elements in as they come into view
+document.addEventListener("DOMContentLoaded", function slideIn() {
+	let previousY = window.scrollY;
+
+	const callback = entries => {
+		entries.forEach(entry => {
+			const { isIntersecting, target: el } = entry;
+
+			// Animate intersecting elements when scrolling down
+			if (isIntersecting && window.scrollY >= previousY ) {
+				el.style.transition = "1s";
+				el.style.transform = "none";
+				el.style.opacity = 1;
+			} else if (isIntersecting) {
+				// Don't show any animation for elements already scrolled past
+				el.style.transition = "none";
+				el.style.transform = "none";
+				el.style.opacity = 1;
+			}
+
+			// Store the current scroll position
+			previousY = window.scrollY;
+		});
+	};
+
+	const options = {
+		root: null,
+		rootMargin: "0px",
+		threshold: 0,
+	};
+
+	const observer = new IntersectionObserver(callback, options);
+
+	document.querySelectorAll(".list li").forEach(el => observer.observe(el));
+});
+
 // Google Analytics
 window.dataLayer = window.dataLayer || [];
 function gtag() {
