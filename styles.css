@@ -42,6 +42,9 @@ body {
 
 	/* background color */
 	background-color: var(--background-color);
+
+	/* No horizontal scrollbar */
+	overflow-x: hidden;
 }
 #background {
 	position: fixed;
@@ -79,7 +82,7 @@ section {
 	padding: 0.5em 0;
 }
 img,
-.tiles a {
+.tiles a:not(.list a) {
 	margin: auto;
 	max-width: 100%;
 }
@@ -100,11 +103,11 @@ h1 {
 	font-weight: 100;
 }
 h1,
-h2,
-h3 {
+h2 {
 	text-align: center;
 }
-a {
+a:not(.list a),
+.list h3 {
 	color: var(--alt-text-color);
 }
 a:hover {
@@ -115,12 +118,24 @@ nav a {
 	color: var(--alt-text-color);
 	margin: auto;
 }
+.list a {
+	text-decoration: none;
+	color: inherit;
+}
 p,
 li,
-a {
+a:not(.list a),
+.list h3 {
 	text-shadow: 0 0 4px var(--square-color);
 	margin: 0;
 }
+.list h3 {
+	font-size: inherit;
+	margin: 0;
+	font-weight: inherit;
+	text-decoration: underline;
+}
+
 li {
 	padding: 0.5em 0.5em;
 	margin: 0.5em 0;
