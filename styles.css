@@ -115,7 +115,9 @@ h1 {
 	margin: 0;
 	font-weight: 100;
 }
-
+h1::after {
+	content: "✨";
+}
 h1,
 h2 {
 	text-align: center;
