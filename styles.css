@@ -286,9 +286,7 @@ footer {
 	}
 }
 
-@media speech,
-print {
-
+@media speech, print {
 	#background,
 	input,
 	#gotoTop,
