@@ -232,6 +232,7 @@ nav,
 .tiles {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 header img {
