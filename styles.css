@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
-
 :root {
 	--text-color: white;
 	--alt-text-color: transparent;
@@ -106,7 +104,7 @@ img,
 /* text */
 body,
 input {
-	font-family: "Fira Code", monospace;
+	font-family: "Fira Code", "Noto Emoji", monospace;
 	color: var(--text-color);
 }
 
