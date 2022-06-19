@@ -141,12 +141,12 @@
         ]
     },
     {
-        "name": "Module compatibility checker",
-        "link": "https://docs.google.com/spreadsheets/d/1R9OhVbkRltwuu26bJALUj18VbrcZ_wZQmrbFgKfipB0/copy",
-        "description": "A spreadsheet that leverages the official spreadsheet to let you know which percentage of your module list is compatible with v9.",
+        "name": "Module Compatibility Checker",
+        "link": "https://foundryvtt.com/packages/mcc",
+        "description": "Check your module list for compatibility with the latest major version of Foundry VTT.",
         "tags": [
             "Foundry VTT",
-            "Spreadsheet",
+            "Module",
             "Compatibility"
         ]
     },
@@ -171,17 +171,6 @@
         ]
     },
     {
-        "name": "Multiline Text Drawings",
-        "link": "https://www.patreon.com/posts/multiline-text-61748891",
-        "description": "A module for Foundry VTT for automatically wrapping text in Drawings on the canvas.",
-        "tags": [
-            "Foundry VTT",
-            "Module",
-            "Drawings",
-            "Text"
-        ]
-    },
-    {
         "name": "Progressive Web App",
         "link": "https://foundryvtt.com/packages/pwa",
         "description": "Install Foundry VTT as a Progressive Web App with its own shortcut and window.",
@@ -189,6 +178,16 @@
             "Foundry VTT",
             "Module",
             "PWA"
+        ]
+    },
+    {
+        "name": "Adventure Tiers",
+        "link": "https://foundryvtt.com/packages/tiers",
+        "description": "Set up your Adventure for all 4 tiers of players to import different content based on the user's choice.",
+        "tags": [
+            "Foundry VTT",
+            "Module",
+            "Adventure"
         ]
     }
 ]
