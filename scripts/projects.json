@@ -2,7 +2,7 @@
     {
         "name": "Ace Library",
         "link": "https://foundryvtt.com/packages/acelib",
-        "description": "A library module for using the Ace editor in Foundry VTT",
+        "description": "A library module for using the Ace code editor in Foundry VTT.",
         "tags": [
             "Foundry VTT",
             "Module",
