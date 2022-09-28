@@ -130,7 +130,7 @@ a:hover {
 	color: var(--text-color);
 }
 
-nav a {
+nav.socials a {
 	font-size: 3rem;
 	color: var(--alt-text-color);
 	margin: auto;
