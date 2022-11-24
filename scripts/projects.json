@@ -111,7 +111,7 @@
 	{
 		"name": "Custom Fonts",
 		"link": "https://github.com/arcanistzed/custom-fonts",
-		"description": "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
+		"description": "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts. This module inspired the core developers to add the ability to use custom fonts in Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
 			"Fonts",
