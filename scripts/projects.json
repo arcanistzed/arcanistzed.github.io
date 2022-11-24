@@ -35,16 +35,6 @@
 		]
 	},
 	{
-		"name": "PF2e Sheet Toggle Banner",
-		"link": "https://foundryvtt.com/packages/toggle-banner",
-		"description": "A module for the Foundry VTT PF2E character sheet that adds a simple toggle to the red side banner",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"PF2e"
-		]
-	},
-	{
 		"name": "Simultaneous Combat System",
 		"link": "https://github.com/arcanistzed/scs",
 		"description": "An implementation of the Simultaneous Combat System for Foundry VTT.",
@@ -106,38 +96,6 @@
 			"Foundry VTT",
 			"Community",
 			"World Building"
-		]
-	},
-	{
-		"name": "World Smiths Toolkit",
-		"link": "https://foundryvtt.com/packages/wst",
-		"description": "A toolkit for use in World Smiths products.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"World Smiths",
-			"Journal Entries"
-		]
-	},
-	{
-		"name": "The Sky Isles",
-		"link": "https://foundryvtt.com/packages/the-sky-isles",
-		"description": "A dnd5e preview for the Amazing Encounters & Places Kickstarter. Take your party to gorgeous earth motes high above the clouds, inhabited by monks from the Order of the Phoenix. Meet the docile winged leopards, scale the floating islands, learn about their culture. But don't fall!",
-		"tags": [
-			"Foundry VTT",
-			"World",
-			"CZRPG"
-		]
-	},
-	{
-		"name": "The Delian Tomb",
-		"link": "https://foundryvtt.com/packages/the-delian-tomb",
-		"description": "A low-level one shot adventure for introducing new players to DnD5e. This adventure was originally outlined in Matt Colville's first Running the Game video.",
-		"tags": [
-			"Foundry VTT",
-			"World",
-			"MCDM",
-			"Dungeon"
 		]
 	},
 	{
