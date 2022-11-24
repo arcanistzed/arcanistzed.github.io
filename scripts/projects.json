@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Ace Library",
-		"link": "https://foundryvtt.com/packages/acelib",
+		"link": "https://github.com/arcanistzed/acelib",
 		"description": "A library module for using the Ace code editor in Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
@@ -13,7 +13,7 @@
 	},
 	{
 		"name": "Journal Code Editor",
-		"link": "https://foundryvtt.com/packages/jce",
+		"link": "https://github.com/arcanistzed/jce",
 		"description": "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
 		"tags": [
 			"Foundry VTT",
@@ -25,7 +25,7 @@
 	{
 		"name": "Atomizer",
 		"link": "https://www.npmjs.com/package/foundry-atomizer",
-		"description": "A build and extract tool for FoundryVTT database files",
+		"description": "A build and extract tool for FoundryVTT database files.",
 		"tags": [
 			"Foundry VTT",
 			"NPM",
@@ -46,8 +46,8 @@
 	},
 	{
 		"name": "Simultaneous Combat System",
-		"link": "https://foundryvtt.com/packages/scs",
-		"description": "An implementation of the Simultaneous Combat System for Foundry VTT",
+		"link": "https://github.com/arcanistzed/scs",
+		"description": "An implementation of the Simultaneous Combat System for Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
 			"Module",
@@ -56,8 +56,8 @@
 	},
 	{
 		"name": "Default Context Menu",
-		"link": "https://foundryvtt.com/packages/dcm",
-		"description": "Use the default browser context menu in Foundry VTT",
+		"link": "https://github.com/arcanistzed/dcm",
+		"description": "Use the default browser context menu in Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
 			"Module",
@@ -67,7 +67,7 @@
 	},
 	{
 		"name": "Export Sheet to PDF",
-		"link": "https://foundryvtt.com/packages/pdf-sheet",
+		"link": "https://github.com/arcanistzed/pdf-sheet",
 		"description": "A system agnostic tool to export your Foundry character sheet to a PDF!",
 		"tags": [
 			"Foundry VTT",
@@ -78,7 +78,7 @@
 	},
 	{
 		"name": "Combat Tracker Groups",
-		"link": "https://foundryvtt.com/packages/ctg",
+		"link": "https://github.com/arcanistzed/ctg",
 		"description": "Group combatants in the Combat Tracker and roll for group initiative.",
 		"tags": [
 			"Foundry VTT",
@@ -89,7 +89,7 @@
 	},
 	{
 		"name": "Sidebar Macros",
-		"link": "https://foundryvtt.com/packages/sidebar-macros",
+		"link": "https://github.com/arcanistzed/sidebar-macros",
 		"description": "Add a Macros tab to the Foundry VTT sidebar!",
 		"tags": [
 			"Foundry VTT",
@@ -142,7 +142,7 @@
 	},
 	{
 		"name": "Module Compatibility Checker",
-		"link": "https://foundryvtt.com/packages/mcc",
+		"link": "https://github.com/arcanistzed/mcc",
 		"description": "Check your module list for compatibility with the latest major version of Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
@@ -152,7 +152,7 @@
 	},
 	{
 		"name": "Custom Fonts",
-		"link": "https://foundryvtt.com/packages/custom-fonts",
+		"link": "https://github.com/arcanistzed/custom-fonts",
 		"description": "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts.",
 		"tags": [
 			"Foundry VTT",
@@ -162,7 +162,7 @@
 	},
 	{
 		"name": "Persist Sheets",
-		"link": "https://foundryvtt.com/packages/persist-sheets",
+		"link": "https://github.com/arcanistzed/persist-sheets",
 		"description": "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
 		"tags": [
 			"Foundry VTT",
@@ -171,18 +171,8 @@
 		]
 	},
 	{
-		"name": "Progressive Web App",
-		"link": "https://foundryvtt.com/packages/pwa",
-		"description": "Install Foundry VTT as a Progressive Web App with its own shortcut and window.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"PWA"
-		]
-	},
-	{
 		"name": "Adventure Tiers",
-		"link": "https://foundryvtt.com/packages/tiers",
+		"link": "https://github.com/arcanistzed/tiers",
 		"description": "Set up your Adventure for all 4 tiers of players to import different content based on the user's choice.",
 		"tags": [
 			"Foundry VTT",
