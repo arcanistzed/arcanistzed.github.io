@@ -137,5 +137,16 @@
 			"Module",
 			"Adventure"
 		]
+	},
+	{
+		"name": "Code Comp",
+		"link": "https://github.com/code-comp/code-comp.github.io",
+		"description": "Code Comp is a platform for developers to compete against each other in a variety of coding challenges. Project for SEG 2900 at uOttawa.",
+		"tags": [
+			"TypeScript",
+			"MongoDB",
+			"Express",
+			"University"
+		]
 	}
 ]
