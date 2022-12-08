@@ -23,7 +23,7 @@ const projects = await fetch("scripts/projects.json").then(res => res.json());
 if (globalThis?.List) {
 	const options = {
 		valueNames: ["name", { attr: "href", name: "link" }, "description", "tags"],
-		item: `<li><a class="link"><h3 class="name"></h3><p class="description"></p><p class="tags"></p></a></li>`,
+		item: `<li><a class="link" ref="noreferrer"><h3 class="name"></h3><p class="description"></p><p class="tags"></p></a></li>`,
 	};
 	const projectList = new List("project-list", options);
 	projects.forEach(project => {
