@@ -190,7 +190,7 @@ ul {
 }
 
 .tags {
-	opacity: 0.5;
+	opacity: 0.75;
 	text-transform: lowercase;
 	font-size: 0.75rem;
 }
@@ -262,7 +262,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	opacity: 0.5;
+	opacity: 0.75;
 	text-align: center;
 }
 
