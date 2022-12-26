@@ -148,5 +148,38 @@
 			"Express",
 			"University"
 		]
+	},
+	{
+		"name": "uORocketry website",
+		"link": "https://uorocketry-4j9.pages.dev",
+		"description": "The website for the uOttawa Rocketry team.",
+		"tags": [
+			"Astro",
+			"Tailwind",
+			"TypeScript",
+			"MDX",
+			"University"
+		]
+	},
+	{
+		"name": "Hack the Hill website",
+		"link": "https://hackthehill.com",
+		"description": "Contributed to the website for Hack the Hill, a hackathon organized by uOttawa students. I worked on the development, design, and infrastructure for the website including building a CLI for sending emails to participants.",
+		"tags": [
+			"React",
+			"Node.js",
+			"Cloudflare",
+			"University"
+		]
+	},
+	{
+		"name": "Zap!",
+		"link": "https://github.com/arcanistzed/zap",
+		"description": "Remove or hide anything from the interface of your Foundry VTT game.",
+		"tags": [
+			"Foundry VTT",
+			"Module",
+			"Interface"
+		]
 	}
 ]
