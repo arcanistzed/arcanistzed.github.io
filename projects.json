@@ -151,7 +151,7 @@
 	},
 	{
 		"name": "uORocketry website",
-		"link": "https://uorocketry-4j9.pages.dev",
+		"link": "https://github.com/arcanistzed/uorocketry",
 		"description": "The website for the uOttawa Rocketry team.",
 		"tags": [
 			"Astro",
@@ -164,7 +164,7 @@
 	{
 		"name": "Hack the Hill website",
 		"link": "https://hackthehill.com",
-		"description": "Contributed to the website for Hack the Hill, a hackathon organized by uOttawa students. I worked on the development, design, and infrastructure for the website including building a CLI for sending emails to participants.",
+		"description": "As a development coordinator, I worked on the development, design, and infrastructure for Hack the Hill, a hackathon organized by uOttawa students.",
 		"tags": [
 			"React",
 			"Node.js",
@@ -180,6 +180,17 @@
 			"Foundry VTT",
 			"Module",
 			"Interface"
+		]
+	},
+	{
+		"name": "Bulk Gmail",
+		"link": "https://github.com/arcanistzed/bulk-gmail",
+		"description": "A CLI tool for sending bulk emails using Gmail.",
+		"tags": [
+			"Node.js",
+			"CLI",
+			"Email",
+			"NPM"
 		]
 	}
 ]
