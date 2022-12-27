@@ -133,7 +133,7 @@ a:hover {
 header nav {
 	position: absolute;
 	right: 1rem;
-	top: 0.5rem;
+	top: 1rem;
 }
 header nav a {
 	text-decoration: none;
