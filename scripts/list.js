@@ -17,7 +17,7 @@ document.querySelector("#search-box").placeholder = placeholders[Math.floor(Math
 
 //#region List creation
 const searchBox = document.getElementById("search-box");
-const projects = await fetch("scripts/projects.json").then(res => res.json());
+const projects = await fetch("projects.json").then(res => res.json());
 
 // If ListJS is available
 if (globalThis?.List) {
