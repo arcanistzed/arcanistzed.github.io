@@ -1,5 +1,16 @@
 [
 	{
+		"name": "Journal Code Editor",
+		"link": "https://github.com/arcanistzed/jce",
+		"description": "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
+		"tags": [
+			"Foundry VTT",
+			"Module",
+			"Journal Entries",
+			"Editor"
+		]
+	},
+	{
 		"name": "Ace Library",
 		"link": "https://github.com/arcanistzed/acelib",
 		"description": "A library module for using the Ace code editor in Foundry VTT.",
@@ -8,17 +19,6 @@
 			"Module",
 			"Ace",
 			"Library",
-			"Editor"
-		]
-	},
-	{
-		"name": "Journal Code Editor",
-		"link": "https://github.com/arcanistzed/jce",
-		"description": "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Journal Entries",
 			"Editor"
 		]
 	},
@@ -45,14 +45,14 @@
 		]
 	},
 	{
-		"name": "Default Context Menu",
-		"link": "https://github.com/arcanistzed/dcm",
-		"description": "Use the default browser context menu in Foundry VTT.",
+		"name": "World Smiths",
+		"link": "https://discord.gg/2YCFD8fxG7",
+		"description": "I'm the founder and software developer at World Smiths, creating Foundry VTT content as a community.",
 		"tags": [
 			"Foundry VTT",
-			"Module",
-			"Context Menu",
-			"Default"
+			"Community",
+			"Content Creation",
+			"Founder"
 		]
 	},
 	{
@@ -89,26 +89,6 @@
 		]
 	},
 	{
-		"name": "World Smiths",
-		"link": "https://discord.gg/2YCFD8fxG7",
-		"description": "I'm the founder of the World Smiths Discord server where the community creates Foundry VTT worlds together.",
-		"tags": [
-			"Foundry VTT",
-			"Community",
-			"World Building"
-		]
-	},
-	{
-		"name": "Module Compatibility Checker",
-		"link": "https://github.com/arcanistzed/mcc",
-		"description": "Check your module list for compatibility with the latest major version of Foundry VTT.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Compatibility"
-		]
-	},
-	{
 		"name": "Custom Fonts",
 		"link": "https://github.com/arcanistzed/custom-fonts",
 		"description": "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts. This module inspired the core developers to add the ability to use custom fonts in Foundry VTT.",
@@ -126,6 +106,26 @@
 			"Foundry VTT",
 			"Module",
 			"Sheets"
+		]
+	},
+	{
+		"name": "Wordle Clone",
+		"link": "https://github.com/arcanistzed/wordle-clone",
+		"description": "A clone of the Wordle website, built with Svelte and with words of varying lengths.",
+		"tags": [
+			"Wordle",
+			"Svelte"
+		]
+	},
+	{
+		"name": "Module Compatibility Checker",
+		"link": "https://github.com/arcanistzed/mcc",
+		"description": "Check your module list for compatibility with the latest major version of Foundry VTT. Built with Svelte using the TyphonJS Runtime Library.",
+		"tags": [
+			"Foundry VTT",
+			"Module",
+			"Compatibility",
+			"Svelte"
 		]
 	},
 	{
