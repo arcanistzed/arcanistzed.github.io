@@ -117,10 +117,12 @@ h1 {
 	margin: 0;
 	font-weight: 100;
 }
+
 h1::after {
 	content: "✨";
 	font-family: "Noto Color Emoji", monospace;
 }
+
 h1,
 h2 {
 	text-align: center;
@@ -140,13 +142,15 @@ header nav {
 	right: 1rem;
 	top: 1rem;
 }
+
 header nav a {
 	text-decoration: none;
-    padding: 0.5em 0.5em;
-    border: solid 1px transparent;
-    border-radius: 5px;
+	padding: 0.5em 0.5em;
+	border: solid 1px transparent;
+	border-radius: 5px;
 	transition: 1s;
 }
+
 header nav a:hover {
 	border: solid 1px var(--alt-text-color);
 }
@@ -308,7 +312,9 @@ footer {
 	}
 }
 
-@media speech, print {
+@media speech,
+print {
+
 	#background,
 	input,
 	#gotoTop,
