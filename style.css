@@ -104,8 +104,12 @@ img,
 /* text */
 body,
 input {
-	font-family: "Fira Code", "Noto Emoji", monospace;
+	font-family: "Fira Code", monospace;
 	color: var(--text-color);
+}
+
+#bio {
+	font-family: "Fira Code", "Noto Color Emoji", monospace;
 }
 
 h1 {
@@ -115,6 +119,7 @@ h1 {
 }
 h1::after {
 	content: "✨";
+	font-family: "Noto Color Emoji", monospace;
 }
 h1,
 h2 {
