@@ -32,10 +32,10 @@ async function applyColors(colors) {
 	rootStyle.setProperty("--alt-text-color", `hsl(${colors[2]} 100% 90%)`);
 
 	// GitHub stats
-	const altHex = hslToHex(colors[2], 100, 90);
+	/* const altHex = hslToHex(colors[2], 100, 90);
 	document.querySelector(
 		"#github-stats img"
-	).src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true&include_all_commits=true&count_private=true`;
+	).src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true&include_all_commits=true&count_private=true`; */
 
 	// Discord presence
 	const id = "455117777745870860";
