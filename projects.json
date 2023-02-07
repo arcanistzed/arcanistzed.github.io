@@ -3,194 +3,125 @@
 		"name": "Journal Code Editor",
 		"link": "https://github.com/arcanistzed/jce",
 		"description": "A module for Foundry VTT that allows you to modify the source code of your Journal Entries using the editor library of your choice.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Journal Entries",
-			"Editor"
-		]
+		"tags": ["Foundry VTT", "Module", "Journal Entries", "Editor"]
 	},
 	{
 		"name": "Ace Library",
 		"link": "https://github.com/arcanistzed/acelib",
 		"description": "A library module for using the Ace code editor in Foundry VTT.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Ace",
-			"Library",
-			"Editor"
-		]
+		"tags": ["Foundry VTT", "Module", "Ace", "Library", "Editor"]
 	},
 	{
 		"name": "Atomizer",
 		"link": "https://www.npmjs.com/package/foundry-atomizer",
 		"description": "A build and extract tool for FoundryVTT database files.",
-		"tags": [
-			"Foundry VTT",
-			"NPM",
-			"Database",
-			"Build",
-			"Extract"
-		]
+		"tags": ["Foundry VTT", "NPM", "Database", "Build", "Extract"]
 	},
 	{
 		"name": "Simultaneous Combat System",
 		"link": "https://github.com/arcanistzed/scs",
 		"description": "An implementation of the Simultaneous Combat System for Foundry VTT.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Combat"
-		]
+		"tags": ["Foundry VTT", "Module", "Combat"]
 	},
 	{
 		"name": "World Smiths",
 		"link": "https://discord.gg/2YCFD8fxG7",
 		"description": "I'm the founder and software developer at World Smiths, creating Foundry VTT content as a community.",
-		"tags": [
-			"Foundry VTT",
-			"Community",
-			"Content Creation",
-			"Founder"
-		]
+		"tags": ["Foundry VTT", "Community", "Content Creation", "Founder"]
 	},
 	{
 		"name": "Export Sheet to PDF",
 		"link": "https://github.com/arcanistzed/pdf-sheet",
 		"description": "A system agnostic tool to export your Foundry character sheet to a PDF!",
-		"tags": [
-			"Foundry VTT",
-			"Character",
-			"PDF",
-			"Export"
-		]
+		"tags": ["Foundry VTT", "Character", "PDF", "Export"]
 	},
 	{
 		"name": "Combat Tracker Groups",
 		"link": "https://github.com/arcanistzed/ctg",
 		"description": "Group combatants in the Combat Tracker and roll for group initiative.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Combat Tracker",
-			"Group"
-		]
+		"tags": ["Foundry VTT", "Module", "Combat Tracker", "Group"]
 	},
 	{
 		"name": "Sidebar Macros",
 		"link": "https://github.com/arcanistzed/sidebar-macros",
 		"description": "Add a Macros tab to the Foundry VTT sidebar!",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Macros",
-			"Sidebar"
-		]
+		"tags": ["Foundry VTT", "Module", "Macros", "Sidebar"]
 	},
 	{
 		"name": "Custom Fonts",
 		"link": "https://github.com/arcanistzed/custom-fonts",
 		"description": "Facilitates using Custom Fonts in Journal Entries, Text Drawings on the canvas, or for the entire UI! You can upload your own font or load a font directly from Google Fonts. This module inspired the core developers to add the ability to use custom fonts in Foundry VTT.",
-		"tags": [
-			"Foundry VTT",
-			"Fonts",
-			"Custom"
-		]
+		"tags": ["Foundry VTT", "Fonts", "Custom"]
 	},
 	{
 		"name": "Persist Sheets",
 		"link": "https://github.com/arcanistzed/persist-sheets",
 		"description": "This module stores your opened sheets and it will reopen, resize, and re-arrange them after you reload or restart Foundry VTT.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Sheets"
-		]
+		"tags": ["Foundry VTT", "Module", "Sheets"]
 	},
 	{
 		"name": "Wordle Clone",
 		"link": "https://github.com/arcanistzed/wordle-clone",
 		"description": "A clone of the Wordle website, built with Svelte and with words of varying lengths.",
-		"tags": [
-			"Wordle",
-			"Svelte"
-		]
+		"tags": ["Wordle", "Svelte"]
 	},
 	{
 		"name": "Module Compatibility Checker",
 		"link": "https://github.com/arcanistzed/mcc",
 		"description": "Check your module list for compatibility with the latest major version of Foundry VTT. Built with Svelte using the TyphonJS Runtime Library.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Compatibility",
-			"Svelte"
-		]
+		"tags": ["Foundry VTT", "Module", "Compatibility", "Svelte"]
 	},
 	{
 		"name": "Adventure Tiers",
 		"link": "https://github.com/arcanistzed/tiers",
 		"description": "Set up your Adventure for all 4 tiers of players to import different content based on the user's choice.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Adventure"
-		]
+		"tags": ["Foundry VTT", "Module", "Adventure"]
 	},
 	{
 		"name": "Code Comp",
 		"link": "https://github.com/code-comp/code-comp.github.io",
 		"description": "Code Comp is a platform for developers to compete against each other in a variety of coding challenges. Project for SEG 2900 at uOttawa.",
-		"tags": [
-			"TypeScript",
-			"MongoDB",
-			"Express",
-			"University"
-		]
+		"tags": ["TypeScript", "MongoDB", "Express", "University"]
 	},
 	{
 		"name": "uORocketry website",
 		"link": "https://github.com/arcanistzed/uorocketry",
 		"description": "The website for the uOttawa Rocketry team.",
-		"tags": [
-			"Astro",
-			"Tailwind",
-			"TypeScript",
-			"MDX",
-			"University"
-		]
-	},
-	{
-		"name": "Hack the Hill",
-		"link": "https://hackthehill.com",
-		"description": "As a development coordinator, I worked on the development, design, and infrastructure for Hack the Hill, a hackathon organized by uOttawa students.",
-		"tags": [
-			"React",
-			"Node.js",
-			"Cloudflare",
-			"University"
-		]
+		"tags": ["Astro", "Tailwind", "TypeScript", "MDX", "University"]
 	},
 	{
 		"name": "Zap!",
 		"link": "https://github.com/arcanistzed/zap",
 		"description": "Remove or hide anything from the interface of your Foundry VTT game.",
-		"tags": [
-			"Foundry VTT",
-			"Module",
-			"Interface"
-		]
+		"tags": ["Foundry VTT", "Module", "Interface"]
 	},
 	{
 		"name": "Bulk Gmail",
 		"link": "https://github.com/arcanistzed/bulk-gmail",
 		"description": "A CLI tool for sending bulk emails using Gmail.",
+		"tags": ["Node.js", "CLI", "Email", "NPM"]
+	},
+	{
+		"name": "Hack the Hill",
+		"link": "https://github.com/HacktheHill",
+		"description": "As the Development Director of Hack the Hill, Canada's Capital hackathon which, I am the technical lead of the team of 10 developers. I am responsible for the open source development of the website, the hacker tracking app, and the email infrastructure. I also ran an introduction to web development workshop for 100+ attendees.",
 		"tags": [
+			"React",
+			"Astro",
 			"Node.js",
-			"CLI",
-			"Email",
-			"NPM"
+			"Cloudflare",
+			"University",
+			"Workshop",
+			"Hackathon",
+			"Next.js",
+			"TypeScript",
+			"Prisma",
+			"MySQL",
+			"Tailwind CSS",
+			"NextAuth.js",
+			"i18next",
+			"tRPC",
+			"Zod"
 		]
 	}
 ]
