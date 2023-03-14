@@ -79,7 +79,7 @@
 	},
 	{
 		"name": "Code Comp",
-		"link": "https://github.com/code-comp/code-comp.github.io",
+		"link": "https://code-comp.github.io/",
 		"description": "Code Comp is a platform for developers to compete against each other in a variety of coding challenges. Project for SEG 2900 at uOttawa.",
 		"tags": ["TypeScript", "MongoDB", "Express", "University"]
 	},
@@ -98,30 +98,67 @@
 	{
 		"name": "Bulk Gmail",
 		"link": "https://github.com/arcanistzed/bulk-gmail",
-		"description": "A CLI tool for sending bulk emails using Gmail.",
-		"tags": ["Node.js", "CLI", "Email", "NPM"]
+		"description": "A CLI tool for sending bulk emails using Gmail built for the organizing team of the Hack the Hill hackathon.",
+		"tags": ["Node.js", "CLI", "Email", "NPM", "Hackathon"]
 	},
 	{
-		"name": "Hack the Hill",
-		"link": "https://github.com/HacktheHill",
-		"description": "As the Development Director of Hack the Hill, Canada's Capital hackathon which, I am the technical lead of the team of 10 developers. I am responsible for the open source development of the website, the hacker tracking app, and the email infrastructure. I also ran an introduction to web development workshop for 100+ attendees.",
+		"name": "Hack the Hill Website",
+		"link": "https://HacktheHill.com",
+		"description": "Lead developer for the Hack the Hill website.",
+		"tags": ["React", "Astro", "Cloudflare", "MUI", "University", "Hackathon"]
+	},
+	{
+		"name": "Track the Hack",
+		"link": "https://tracker.hackthehill.com",
+		"description": "Track the Hack is a tool for organizing hackathons.",
 		"tags": [
-			"React",
-			"Astro",
-			"Node.js",
-			"Cloudflare",
-			"University",
-			"Workshop",
-			"Hackathon",
-			"Next.js",
 			"TypeScript",
+			"React",
+			"Next.js",
+			"tRPC",
 			"Prisma",
-			"MySQL",
-			"Tailwind CSS",
 			"NextAuth.js",
 			"i18next",
-			"tRPC",
-			"Zod"
+			"NextAuth.js",
+			"QR",
+			"Markdown",
+			"Zod",
+			"Vercel",
+			"University",
+			"Hackathon"
 		]
+	},
+	{
+		"name": "Simmer - ConUHacks VII",
+		"link": "http://simmer.arcanist.me",
+		"description": "Simmer uses machine learning to display important company info from Discord and Slack on a user's feed.",
+		"tags": [
+			"React",
+			"Node.js",
+			"Discord",
+			"NextAuth.js",
+			"Prisma",
+			"Discord.js",
+			"Next.js",
+			"Socket.IO",
+			"Zod",
+			"Caddy",
+			"PM2",
+			"TypeScript",
+			"University",
+			"Hackathon"
+		]
+	},
+	{
+		"name": "Number Converter",
+		"link": "https://arcanist.me/number-converter/",
+		"description": "A simple number converter that converts numbers from one base (e.g. binary, octal, decimal, hexadecimal) to another.",
+		"tags": ["Solid", "TypeScript", "Tailwind CSS", "Vite", "University"]
+	},
+	{
+		"name": "Cyber Hero - uOttaHack 5",
+		"link": "https://cyberhero.pages.dev/",
+		"description": "A fun tower-defence inspired game for teaching important cybersecurity concepts to children.",
+		"tags": ["React", "Next.js", "TypeScript", "University"]
 	}
 ]
