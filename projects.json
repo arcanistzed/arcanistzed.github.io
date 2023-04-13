@@ -105,7 +105,7 @@
 		"name": "Hack the Hill Website",
 		"link": "https://HacktheHill.com",
 		"description": "Lead developer for the Hack the Hill website.",
-		"tags": ["React", "Astro", "Cloudflare", "MUI", "University", "Hackathon"]
+		"tags": ["React", "Astro", "Cloudflare", "MUI", "Nanostores", "University", "Hackathon"]
 	},
 	{
 		"name": "Track the Hack",
@@ -123,6 +123,8 @@
 			"QR",
 			"Markdown",
 			"Zod",
+			"MySQL",
+			"PlanetScale",
 			"Vercel",
 			"University",
 			"Hackathon"
@@ -160,5 +162,38 @@
 		"link": "https://cyberhero.pages.dev/",
 		"description": "A fun tower-defence inspired game for teaching important cybersecurity concepts to children.",
 		"tags": ["React", "Next.js", "TypeScript", "University"]
+	},
+	{
+		"name": "IEEE VPX platform website",
+		"link": "https://arcanist.me/vpx",
+		"description": "Website for my election campaign for the VP External position at the IEEE uOttawa Student Branch.",
+		"tags": ["React", "Framer", "Astro", "Tailwind CSS", "Nanostores", "University"]
+	},
+	{
+		"name": "uOttawa Cybersecurity Club website",
+		"link": "https://cybersecuottawa.com",
+		"description": "Website for the new uOttawa Cybersecurity Club that I am one of the founders of. The website includes a live leaderboard and participants can submit flags for our Capture the Flag challenges.",
+		"tags": [
+			"TypeScript",
+			"React",
+			"Next.js",
+			"tRPC",
+			"Prisma",
+			"NextAuth.js",
+			"i18next",
+			"NextAuth.js",
+			"Zod",
+			"MySQL",
+			"PlanetScale",
+			"Vercel",
+			"CTF",
+			"University"
+		]
+	},
+	{
+		"name": "uOttawa Game Dev Club website",
+		"link": "https://uogdc.com",
+		"description": "Website for the uOttawa Game Dev Club where I was elected as VP Web.",
+		"tags": ["React", "TypeScript", "Next.js", "i18next", "Tailwind CSS", "University"]
 	}
 ]
