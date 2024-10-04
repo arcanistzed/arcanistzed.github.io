@@ -116,11 +116,7 @@ h1 {
 	font-size: 8vw;
 	margin: 0;
 	font-weight: 100;
-}
-
-h1::after {
-	content: "✨";
-	font-family: "Noto Color Emoji", monospace;
+	white-space: nowrap;
 }
 
 h1,
@@ -172,7 +168,7 @@ li,
 a:not(.list a),
 .list h3 {
 	text-shadow: 0 0 4px var(--square-color);
-	margin: 0;
+	margin: 0.5em 0;
 }
 
 .list h3 {
