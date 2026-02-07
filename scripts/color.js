@@ -3,14 +3,21 @@
  * @returns {number[]} Random colors
  */
 function generateColors() {
-	const one = generateHue(Math.floor(Math.random() * 360));
-	const two = generateHue(one);
-	const three = generateHue(one, two);
-	const colors = [one, two, three];
-	if (colors.some(c => c === undefined)) {
-		console.warn("Re-attempting color generation...");
-		return generateColors();
-	}
+	let colors;
+	let attempts = 0;
+
+	do {
+		const one = generateHue(Math.floor(Math.random() * 360));
+		const two = generateHue(one);
+		const three = generateHue(one, two);
+		colors = [one, two, three];
+		attempts++;
+		if (attempts > 10) {
+			console.warn("Failed to generate colors after 10 attempts.");
+			return [0, 0, 0]; // Fallback colors
+		}
+	} while (colors.includes(undefined));
+
 	return colors;
 }
 
@@ -19,7 +26,6 @@ function generateColors() {
  * @param {number[]} colors - Colors to apply
  */
 async function applyColors(colors) {
-	// Background
 	const rootStyle = root.style;
 	rootStyle.setProperty(
 		"--gradient",
@@ -31,20 +37,11 @@ async function applyColors(colors) {
 	rootStyle.setProperty("--square-color", `hsl(${colors[2]} 100% 10%)`);
 	rootStyle.setProperty("--alt-text-color", `hsl(${colors[2]} 100% 90%)`);
 
-	// GitHub stats
-	const altHex = hslToHex(colors[2], 100, 90);
-	document.querySelector(
-		"#github-stats img"
-	).src = `https://github-readme-stats.vercel.app/api?username=arcanistzed&show_icons=true&title_color=${altHex}&text_color=fff&icon_color=${altHex}&bg_color=00000000&hide_border=true&include_all_commits=true&count_private=true`;
-
-	// Discord presence
-	const id = "455117777745870860";
-	const discordPresence = document.querySelector("#discord-presence");
-	discordPresence.href = `https://discord.com/users/${id}`;
-	discordPresence.querySelector("img").src = `https://lanyard.cnrad.dev/api/${id}?bg=00000000`;
-
-	// Tiles
 	const tiles = document.querySelector(".tiles");
+	if (!tiles) {
+		console.warn("Tiles element not found.");
+		return;
+	}
 	tiles.style.transition = "all 2s cubic-bezier(0.22, 1, 0.36, 1) 0s";
 	tiles.style.transform = "translateY(-50px)";
 	tiles.style.opacity = 0;
@@ -53,30 +50,6 @@ async function applyColors(colors) {
 		tiles.style.transform = "";
 		tiles.style.opacity = "";
 	}, 500);
-
-	if (!(await (await fetch(`https://api.lanyard.rest/v1/users/${id}`)).json()).data.activities.length)
-		discordPresence.remove();
-}
-
-/**
- * Convert a HSL color to Hex
- * @from https://stackoverflow.com/a/44134328
- * @param {number} h - Hue
- * @param {number} s - Saturation
- * @param {number} l - Lightness
- * @return {string} Hex color code
- */
-function hslToHex(h, s, l) {
-	l /= 100;
-	const a = (s * Math.min(l, 1 - l)) / 100;
-	const f = n => {
-		const k = (n + h / 30) % 12;
-		const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
-		return Math.round(255 * color)
-			.toString(16)
-			.padStart(2, "0"); // convert to Hex and prefix "0" if needed
-	};
-	return `${f(0)}${f(8)}${f(4)}`;
 }
 
 /**
@@ -113,4 +86,4 @@ function generateHue(...bases) {
 }
 
 // Apply generated colors
-applyColors(generateColors());
+await applyColors(generateColors());
