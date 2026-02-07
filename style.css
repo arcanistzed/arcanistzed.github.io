@@ -1,9 +1,14 @@
 :root {
 	--text-color: white;
-	--alt-text-color: transparent;
+	--alt-text-color: #a3d1ff;
 	--background-color: #111;
 	--gradient: linear-gradient(0deg, indigo, navy);
-	--square-color: transparent;
+	--square-color: rgba(163, 209, 255, 0.08);
+	--border-color: var(--alt-text-color);
+	--shadow-color: var(--square-color);
+	--link-color: var(--alt-text-color);
+	--link-hover-color: var(--text-color);
+	--input-background: hsla(0, 0%, 100%, 0.05);
 
 	scroll-behavior: smooth;
 }
@@ -18,7 +23,7 @@
 	}
 
 	30% {
-		transform: scale(0.9, 1.1) translateY(-50px);
+		transform: scale(0.9, 1.1) translateY(-3.125rem);
 	}
 
 	50% {
@@ -26,7 +31,7 @@
 	}
 
 	57% {
-		transform: scale(1, 1) translateY(-3px);
+		transform: scale(1, 1) translateY(-0.1875rem);
 	}
 
 	64% {
@@ -56,7 +61,7 @@ body {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	filter: blur(6em);
+	filter: blur(4rem);
 }
 
 #square {
@@ -87,7 +92,7 @@ main {
 
 nav,
 section {
-	padding: 0.5em 0;
+	padding: 0.5rem 0;
 }
 
 img,
@@ -98,7 +103,7 @@ img,
 
 #discord-presence img {
 	clip-path: inset(45% 0 0 0);
-	margin-top: -86px;
+	margin-top: -5.375rem;
 }
 
 /* text */
@@ -106,6 +111,7 @@ body,
 input {
 	font-family: "Fira Code", monospace;
 	color: var(--text-color);
+	line-height: 1.75;
 }
 
 #bio {
@@ -114,6 +120,7 @@ input {
 
 h1 {
 	font-size: 8vw;
+	line-height: 1.05;
 	margin: 0;
 	font-weight: 100;
 	white-space: nowrap;
@@ -124,13 +131,13 @@ h2 {
 	text-align: center;
 }
 
-a:not(.list a),
+a,
 .list h3 {
-	color: var(--alt-text-color);
+	color: var(--link-color);
 }
 
 a:hover {
-	color: var(--text-color);
+	color: var(--link-hover-color);
 }
 
 header nav {
@@ -142,33 +149,44 @@ header nav {
 
 header nav a {
 	text-decoration: none;
-	padding: 0.5em 0.5em;
-	border: solid 1px transparent;
-	border-radius: 5px;
+	padding: 0.5rem 0.5rem;
+	border: solid 0.0625rem transparent;
+	border-radius: 0.25rem;
 	transition: 1s;
 }
 
 header nav a:hover {
-	border: solid 1px var(--alt-text-color);
+	border: solid 0.0625rem var(--border-color);
 }
 
 nav.socials a {
 	font-size: 3rem;
-	color: var(--alt-text-color);
+	color: var(--link-color);
 	margin: auto;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	list-style: none;
+	padding: 0;
 }
 
 .list a {
 	text-decoration: none;
-	color: inherit;
+	color: var(--text-color);
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
 }
 
 p,
 li,
-a:not(.list a),
+a,
 .list h3 {
-	text-shadow: 0 0 4px var(--square-color);
-	margin: 0.5em 0;
+	text-shadow: 0 0 0.25rem var(--shadow-color);
+	margin: 0;
 }
 
 .list h3 {
@@ -179,16 +197,16 @@ a:not(.list a),
 }
 
 .list li {
-	padding: 0.5em 0.5em;
-	margin: 0.5em 0;
-	border: solid 1px transparent;
-	border-radius: 5px;
-	transform: translateX(100px);
+	padding: 0.5rem 0.5rem;
+	margin: 0;
+	border: solid 0.0625rem transparent;
+	border-radius: 0.25rem;
+	transform: translateX(6.25rem);
 	opacity: 0;
 }
 
 .list li:hover {
-	border: solid 1px var(--alt-text-color);
+	border: solid 0.0625rem var(--border-color);
 }
 
 ul {
@@ -199,19 +217,21 @@ ul {
 	opacity: 0.75;
 	text-transform: lowercase;
 	font-size: 0.75rem;
+	margin-bottom: 0;
 }
 
 /* interactivity */
 #search-box {
 	background: transparent;
-	border: none;
-	border-radius: 5px;
+	border: solid 0.0625rem var(--border-color);
+	border-radius: 0.25rem;
 	color: var(--alt-text-color);
 	font-size: 1rem;
-	padding: 5px;
+	padding: 0.125rem 0.5rem;
 	width: 100%;
 	box-sizing: border-box;
-	background-color: hsla(0, 0%, 100%, 0.05);
+	background-color: var(--input-background);
+	box-shadow: 0 0 0.5rem var(--shadow-color);
 }
 
 ::-webkit-search-cancel-button {
@@ -219,15 +239,15 @@ ul {
 }
 
 #project-list,
-#gotoTop {
+#go-to-top {
 	cursor: pointer;
 }
 
-#gotoTop {
+#go-to-top {
 	display: none;
 	position: fixed;
-	right: 0.5em;
-	bottom: 0.5em;
+	right: 0.5rem;
+	bottom: 0.5rem;
 	z-index: 99;
 	background-color: transparent;
 	color: var(--text-color);
@@ -235,8 +255,8 @@ ul {
 	font-size: 2rem;
 }
 
-#gotoTop:hover {
-	color: var(--alt-text-color);
+#go-to-top:hover {
+	color: var(--link-color);
 }
 
 .tiles {
@@ -246,7 +266,7 @@ ul {
 /* header */
 header {
 	flex-direction: column;
-	margin: 1em;
+	margin: 1rem;
 }
 
 header,
@@ -255,12 +275,12 @@ nav,
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 1em;
+	gap: 1rem;
 }
 
 header img {
 	filter: invert(1);
-	height: 10em;
+	height: 10rem;
 	animation: bounce 2s cubic-bezier(0.28, 0.84, 0.42, 1) 5s infinite;
 }
 
@@ -268,18 +288,18 @@ header img {
 footer {
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 1rem;
 	opacity: 0.75;
 	text-align: center;
 }
 
 /* scroll bar */
 ::-webkit-scrollbar {
-	width: 0.5em;
+	width: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 1em;
+	border-radius: 1rem;
 	background: var(--alt-text-color);
 }
 
@@ -289,34 +309,41 @@ footer {
 
 /* selected text */
 ::selection {
-	background: var(--text-color);
-	color: var(--square-color);
+	background: var(--alt-text-color);
+	color: var(--background-color);
 	text-shadow: none;
 }
 
 /* other media */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 50rem) {
 	main {
 		padding-left: 20vw;
 		padding-right: 20vw;
 	}
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 125rem) {
 	main {
 		padding-left: 33vw;
 		padding-right: 40vw;
 	}
 }
 
-@media speech,
-print {
-
+@media speech, print {
 	#background,
 	input,
-	#gotoTop,
+	#go-to-top,
 	h1::after {
 		display: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
 	}
 }
 
@@ -327,6 +354,11 @@ print {
 		--background-color: white !important;
 		--gradient: transparent !important;
 		--square-color: white !important;
+		--border-color: black !important;
+		--shadow-color: transparent !important;
+		--link-color: blue !important;
+		--link-hover-color: blue !important;
+		--input-background: transparent !important;
 	}
 
 	body {
@@ -339,10 +371,6 @@ print {
 	li,
 	a {
 		text-shadow: none;
-	}
-
-	a {
-		color: blue;
 	}
 
 	header img {
